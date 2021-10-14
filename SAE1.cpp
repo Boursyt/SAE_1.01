@@ -3,6 +3,11 @@
 #include <string> // importation des bibliothèques neccessaires
 using namespace std;
 
+
+/*Probleme a resoudre
+    fonctions 
+
+*/
 void parametre(int *nb_allumette,char joueur[],char *ordi,char start[])//fonction pour le parametrage de la partie
 {
     cout<<"entrez votre pseudo"<<endl;
@@ -17,14 +22,6 @@ void parametre(int *nb_allumette,char joueur[],char *ordi,char start[])//fonctio
                 cin>>start;
             }
         }
-    if (start == "oui")
-    {
-        start = "joueur";
-    }
-    else
-    {
-        start = "PC";
-    }
     cout << "entrez le nombre d'allumette souhaté entre 1 et 30" << endl;
     cin >> *nb_allumette;
     while (*nb_allumette < 1 || *nb_allumette > 30)  
@@ -53,7 +50,7 @@ void parametre(int *nb_allumette,char joueur[],char *ordi,char start[])//fonctio
 void affiche_Allumettes(int *nb_allumettes)
 {
     char allumettes = '!';
-    for(int i = 0; i < *nb_allumettes; i++)
+    for(int i = 1; i <= *nb_allumettes; i++)
     {
         cout<<allumettes;
         if(i%5 == 0)
@@ -61,6 +58,7 @@ void affiche_Allumettes(int *nb_allumettes)
             cout<<endl;
         }
     }
+    cout<<endl<<endl;
 }
 
 int main()
@@ -71,6 +69,10 @@ int main()
     char ordi;
     // parametre(&nb_allumette,joueur,&ordi,start);
     // cout<<"nombre allumettes: "<<nb_allumette<<" pseudo: "<<joueur<<" difficulte: "<<ordi<<endl;
-    affiche_Allumettes
+    for(int i = 0; i < 20; i++)
+    {
+        cin >> nb_allumette;
+        affiche_Allumettes(&nb_allumette);
+    }
     return 0;
 }
