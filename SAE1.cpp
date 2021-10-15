@@ -5,7 +5,7 @@ using namespace std;
 
 
 /*Probleme a resoudre
-    fonctions 
+    fonction
 
 */
 void parametre(int *nb_allumette,char joueur[],char *ordi,char start[])//fonction pour le parametrage de la partie
