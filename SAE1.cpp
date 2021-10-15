@@ -14,14 +14,6 @@ void parametre(int *nb_allumette,char joueur[],char *ordi,char start[])//fonctio
     cin>>joueur;
     cout<<"Voulez vous commencer? marquez oui, sinon, marquez non"<<endl;
     cin>>start;
-    if(start != "Oui" & start != "Non") //verification de la valeur start, valable ou non
-        {
-            while (start != "Oui" && start != "Non")// tant que la valeur n'est pas bonne, on redemande de choisir qui commence
-            {
-                cout<<"Je n'ai pas compris, veuillez reesayer"<<endl;
-                cin>>start;
-            }
-        }
     cout << "entrez le nombre d'allumette souhaté entre 1 et 30" << endl;
     cin >> *nb_allumette;
     while (*nb_allumette < 1 || *nb_allumette > 30)  
