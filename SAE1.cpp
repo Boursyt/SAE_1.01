@@ -69,10 +69,5 @@ int main()
     char ordi;
     // parametre(&nb_allumette,joueur,&ordi,start);
     // cout<<"nombre allumettes: "<<nb_allumette<<" pseudo: "<<joueur<<" difficulte: "<<ordi<<endl;
-    for(int i = 0; i < 20; i++)
-    {
-        cin >> nb_allumette;
-        affiche_Allumettes(&nb_allumette);
-    }
-    return 0;
+    return 0; 
 }
