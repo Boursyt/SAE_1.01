@@ -1,6 +1,7 @@
 #include<stdio.h> 
 #include<iostream>          
 #include <string.h> // importation des bibliothèques neccessaires
+#include<time.h> 
 using namespace std;
 //compile:g++ -o main.exe SAE1.cpp
 
@@ -74,7 +75,17 @@ void affiche_Allumettes(int *nb_allumettes)
     }
     cout<<"\n\nFIN";
 }
-
+int ordiJoue(int *nb_allumette, char *ordi)
+{
+    if(*ordi == 'N')
+    {
+        *nb_allumette = *nb_allumette - (rand() % 2 + 1);
+    }
+    else 
+    {
+        
+    }
+}
 int main()
 {
 
