@@ -83,7 +83,7 @@ int ordiJoue(int *nb_allumette, char *ordi)
     }
     else 
     {
-        
+        *nb_allumette;
     }
 }
 int main()
