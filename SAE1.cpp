@@ -93,7 +93,7 @@ void jeualterne(int tour, char* start)
         {
             
         }
-        else //joueur joueu , tour paire
+        else //joueur joue , tour paire
         {
 
         }
@@ -130,6 +130,6 @@ int main()
 
 
 
-    
+
 }
 
