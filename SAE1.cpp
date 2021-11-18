@@ -1,4 +1,3 @@
-#include<stdio.h> 
 #include<iostream>          
 #include <string.h> // importation des bibliothèques neccessaires
 #include<time.h> 
@@ -75,24 +74,57 @@ void affiche_Allumettes(int *nb_allumettes)
     }
     cout<<"\n\nFIN";
 }
-int ordiJoue(int *nb_allumette, char *ordi)
+void jeualterne(int tour, char* start)
 {
-    if(*ordi == 'N')
+    if(strcmp(start,"Oui") == 0)
+    {
+        if(tour%2 != 0) //joueur joue, toure impaire
+        {
+                //fonction joueurJoue
+        }
+        else //ordi joueu , tour paire/
+        {
+             //joueOrdi();             
+        }
+    }
+    else
+    {
+       if(tour%2 != 0) //ordi joue, toure impaire
+        {
+            
+        }
+        else //joueur joueu , tour paire
+        {
+
+        }
+    }
+    
+}
+int miseAjour(int nb_allumettes, int nb)
+{
+    nb_allumettes = nb_allumettes - nb;
+    return nb_allumettes;
+}
+void joueOrdi(int *nb_allumette, char *ordi)
+{
+    if(*ordi == 'N' || *ordi == 'n') //mode naif
     {
         *nb_allumette = *nb_allumette - (rand() % 2 + 1);
     }
-    else 
+    else //mode expert
     {
-        *nb_allumette;
+        
     }
 }
+
 int main()
 {
 
-    int nb_allumette;
+    int nb_allumette = 28, tour = 1;
     char joueur[50], start[10]; 
     char ordi;
     parametre(&nb_allumette,joueur,&ordi,start);
     affiche_Allumettes(&nb_allumette);
     return 0; 
 }
+
