@@ -126,5 +126,10 @@ int main()
     parametre(&nb_allumette,joueur,&ordi,start);
     affiche_Allumettes(&nb_allumette);
     return 0; 
+
+
+
+
+    
 }
 
